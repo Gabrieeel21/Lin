@@ -81,4 +81,33 @@ body {
       transform: translateY(0);
     }
   }
+
+  @media (max-width: 600px) {
+    .envelope {
+      padding: 25px 35px;
+      font-size: 1.1em;
+    }
+  
+    .mensagem {
+      padding: 20px;
+      max-width: 90%;
+      font-size: 0.95em;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 0.95em;
+    }
+  }
+  
+  /* Permitir rolagem quando a carta estiver aberta */
+  .carta {
+    overflow-y: auto;
+  }
+  
+  /* Evitar problemas com 100vh em dispositivos móveis */
+  body {
+    min-height: 100vh;
+    height: auto;
+  }
   
