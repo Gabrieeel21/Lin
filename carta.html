@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carta para Aliny</title>
+  <link rel="stylesheet" href="carta.css" />
+</head>
+<body>
+  <div class="envelope-container">
+    <div class="envelope" onclick="abrirCarta()">
+      <p>💌 Abrir</p>
+    </div>
+
+    <div class="carta" id="carta">
+      <div class="mensagem">
+        <h2>Querida Aliny </h2>
+            <p>
+                Esse ano foi muito especial pra mim, e você fez parte disso de um jeito leve, divertido e marcante. Cada conversa, risada e até os momentos de tédio na aula do cacete do Maurão ficaram melhores com a sua presença.
+            </p>
+
+            <p>
+                Infelizmente chegou nosso último período estudando juntos, ano que vem continuo somente com o Zé e o Ruan, e você vai fazer muita falta nas nossas conversas... Mas, mais do que isso, fica a lembrança de como foi legal viver o dia a dia ao seu lado — e é isso que eu quero guardar.
+            </p>
+
+            <p>
+                E Sobre o presente: pode parecer simples, mas eu demorei 1 MADRUGADA escolhendo a versão certa do livro que eu queria te dar. Queria que fosse algo especial e que combinasse com você, consequetemente escolhi a versão mais linda que achei.
+            </p>
+
+            <p>
+                Aproveita muito o seu aniversário! Torço pra que esse novo ciclo traga coisas incríveis pra você. Você merece tudo de bom.
+            </p>
+
+            <p style="text-align: right;">Com carinho, <br><strong>Gabriel</strong></p>
+        <button onclick="fecharCarta()">Fechar 💌</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function abrirCarta() {
+      document.getElementById('carta').style.display = 'flex';
+    }
+
+    function fecharCarta() {
+      document.getElementById('carta').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
